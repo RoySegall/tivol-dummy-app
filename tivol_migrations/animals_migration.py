@@ -4,7 +4,7 @@ from tivol.base_classes.migration_handler_base import MigrationHandlerBase
 import os
 
 
-class AnimalMigrations(MigrationHandlerBase):
+class AnimalMigration(MigrationHandlerBase):
 
     def init_metadata(self):
         csv_mapper = CsvMapper()
