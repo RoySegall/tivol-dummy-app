@@ -1,4 +1,4 @@
-id, animal_name,sound,number_of_legs
+id,animal_name,sound,number_of_legs
 animal_1,Cat,Meow,4
 animal_2,Dog,Woff,4
 animal_3,Fish,Blop,0
