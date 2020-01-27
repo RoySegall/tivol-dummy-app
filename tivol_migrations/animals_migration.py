@@ -10,6 +10,7 @@ class AnimalMigration(MigrationHandlerBase):
         csv_mapper = CsvMapper()
         csv_mapper.set_destination_file(path=os.path.join(os.getcwd(), 'dummyapp', 'tivol_migrations', 'source_files', 'animals.csv'))
 
+        self.id = 'animal'
         self.name = 'Animal migration'
         self.description = 'Migrating animals into the system'
         self.add_source_mapper(csv_mapper)

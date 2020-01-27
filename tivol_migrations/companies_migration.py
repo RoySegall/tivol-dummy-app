@@ -11,6 +11,7 @@ class CompanyMigration(MigrationHandlerBase):
         yaml_mapper = YamlMapper()
         yaml_mapper.set_destination_file(path=os.path.join(os.getcwd(), 'dummyapp', 'tivol_migrations', 'source_files', 'companies.yml'))
 
+        self.id = 'company'
         self.name = 'Company migration'
         self.description = 'Migrating companies into the system'
         self.add_source_mapper(yaml_mapper)
