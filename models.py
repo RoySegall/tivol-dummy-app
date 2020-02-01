@@ -19,3 +19,11 @@ class Company(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Actor(models.Model):
+    name = CharField(max_length=25)
+    birth_date = DateTimeField()
+
+    def __str__(self):
+        return self.name
