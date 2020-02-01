@@ -27,3 +27,11 @@ class Actor(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Tag(models.Model):
+    title = CharField(max_length=255)
+    description = CharField(max_length=255)
+
+    def __str__(self):
+        return self.title
