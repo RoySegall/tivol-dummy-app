@@ -1,7 +1,8 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.http import JsonResponse
+import json
+import os
 
 
 def rest_content(request):
-    html = "<html><body>It is now %s.</body></html>"
-    return HttpResponse(html)
+    with open(os.path.join(os.getcwd(), 'dummyapp', 'tivol_migrations', 'source_files', 'filmmakers.json'), 'r') as file:
+        return JsonResponse(json.load(file), safe=False)
