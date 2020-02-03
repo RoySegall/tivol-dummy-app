@@ -1,0 +1,22 @@
+[
+    {
+        "id": "director_1",
+        "name": "J. J. Abrams",
+        "active_since": "1982"
+    },
+    {
+        "id": "director_2",
+        "name": "George Lucas",
+        "active_since": "1965"
+    },
+    {
+        "id": "director_3",
+        "name": "Quentin Tarantino",
+        "active_since": "1987"
+    },
+    {
+        "id": "director_4",
+        "name": "Martin Scorsese",
+        "active_since": "1963"
+    }
+]

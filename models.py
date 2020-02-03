@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import CharField, IntegerField, DateTimeField
+from django.db.models import CharField, IntegerField, DateTimeField, DateField
 
 
 class Animal(models.Model):
@@ -35,3 +35,11 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Filmmaker(models.Model):
+    name = CharField(max_length=255)
+    active_since = DateField(max_length=255)
+
+    def __str__(self):
+        return self.name
