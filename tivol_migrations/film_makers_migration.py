@@ -17,5 +17,5 @@ class FilmMakerMigration(MigrationHandlerBase):
         self.set_model_target(Filmmaker)
 
         self.fields_plugins = {
-            'active_since': [{'plugin': DatePlugin, 'extra_info': {'format': '  %Y'}}]
+            'active_since': [{'plugin': DatePlugin, 'extra_info': {'format': '%Y'}}]
         }
