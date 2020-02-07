@@ -1,5 +1,6 @@
 from django.db import models
-from django.db.models import CharField, IntegerField, DateTimeField, DateField
+from django.db.models import CharField, IntegerField, DateTimeField, \
+    DateField, OneToOneField
 
 
 class Animal(models.Model):
@@ -40,6 +41,23 @@ class Tag(models.Model):
 class Filmmaker(models.Model):
     name = CharField(max_length=255)
     active_since = DateField(max_length=255)
+
+    def __str__(self):
+        return self.name
+
+
+class Director(models.Model):
+    name = CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
+
+
+class Movie(models.Model):
+    name = CharField(max_length=255)
+    director = models.ForeignKey(
+        Director, on_delete=models.DO_NOTHING
+    )
 
     def __str__(self):
         return self.name
